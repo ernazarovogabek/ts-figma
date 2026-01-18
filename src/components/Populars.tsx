@@ -1,4 +1,4 @@
-// PopularProducts.tsx
+
 import React from 'react';
 
 import RF from '../assets/img/RF.png'
@@ -11,7 +11,7 @@ interface Product {
   title: string;
 }
 
- const Popular: React.FC = () => {
+ const Populars: React.FC = () => {
   // Mock ma'lumotlar (rasmdagi ma'lumotlarga mos)
   const products: Product[] = [
     { id: '1', code: '#02.02.02.01-1000', title: 'Удаляемый герметизирующий компаунд для повторного сращивания кабеля' },
@@ -32,7 +32,20 @@ interface Product {
     { id: '16', code: '#02.02.02.01-1000', title: 'Изделия с армирующими материалами на основе стеклоткани, пришитыми к стеклоизоляционному слою марки' },
     { id: '17', code: '#02.02.02.01-1000', title: 'Удаляемый герметизирующий компаунд для повторного сращивания кабеля' },
     { id: '18', code: '#02.02.02.01-1000', title: 'Изделия с армирующими материалами на основе стеклоткани, пришитыми к стеклоизоляционному слою марки' },
-    
+    { id: '19', code: '#02.02.02.01-1000', title: 'Удаляемый герметизирующий компаунд для повторного сращивания кабеля' },
+    { id: '20', code: '#02.02.02.01-1000', title: 'Изделия с армирующими материалами на основе стеклоткани, пришитыми к стеклоизоляционному слою марки' },
+    { id: '21', code: '#02.02.02.01-1000', title: 'Удаляемый герметизирующий компаунд для повторного сращивания кабеля' },
+    { id: '22', code: '#02.02.02.01-1000', title: 'Изделия с армирующими материалами на основе стеклоткани, пришитыми к стеклоизоляционному слою марки' },
+    { id: '23', code: '#02.02.02.01-1000', title: 'Удаляемый герметизирующий компаунд для повторного сращивания кабеля' },
+    { id: '24', code: '#02.02.02.01-1000', title: 'Изделия с армирующими материалами на основе стеклоткани, пришитыми к стеклоизоляционному слою марки' },
+    { id: '25', code: '#02.02.02.01-1000', title: 'Удаляемый герметизирующий компаунд для повторного сращивания кабеля' },
+    { id: '26', code: '#02.02.02.01-1000', title: 'Изделия с армирующими материалами на основе стеклоткани, пришитыми к стеклоизоляционному слою марки' },
+    { id: '27', code: '#02.02.02.01-1000', title: 'Удаляемый герметизирующий компаунд для повторного сращивания кабеля' },
+    { id: '28', code: '#02.02.02.01-1000', title: 'Изделия с армирующими материалами на основе стеклоткани, пришитыми к стеклоизоляционному слою марки' },
+    { id: '29', code: '#02.02.02.01-1000', title: 'Удаляемый герметизирующий компаунд для повторного сращивания кабеля' },
+    { id: '30', code: '#02.02.02.01-1000', title: 'Изделия с армирующими материалами на основе стеклоткани, пришитыми к стеклоизоляционному слою марки' },
+    { id: '31', code: '#02.02.02.01-1000', title: 'Удаляемый герметизирующий компаунд для повторного сращивания кабеля' },
+    { id: '32', code: '#02.02.02.01-1000', title: 'Изделия с армирующими материалами на основе стеклоткани, пришитыми к стеклоизоляционному слою марки' },
   ];
 
   return (
@@ -42,9 +55,12 @@ interface Product {
 
 
 
-    <div className="bg-gray-50">
-    <div className=" max-w-[1440px] mx-auto p-6 rounded-lg shadow-sm">
-      {/* Sarlavha */}
+
+ <div className="bg-gray-50">
+      <div className="max-w-[1440px] mx-auto p-6 rounded-lg shadow-sm">
+        {/* Sarlavha */}
+       
+
       <div className="flex items-center justify-between mb-4">
         <h2 className="text-xl font-bold text-blue-800">KO’P KO’RILGANLAR</h2>
      
@@ -60,45 +76,163 @@ interface Product {
            <img src={RF} alt="" />
           </button>
       </div>
-      {/* Mahsulotlar ro'yxati */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-8">
-        {products.map((product) => (
-          <div
-            key={product.id}
-            className="flex items-start justify-between p-3 bg-white rounded-md shadow-sm border border-gray-200 hover:border-blue-300 transition cursor-pointer"
-          >
-            <div className="flex-1">
-              <span className="block text-xs text-gray-500 mb-1">{product.code}</span>
-              <p className="text-sm text-gray-800 leading-tight">{product.title}</p>
-            </div>
-            <div className="ml-2 flex-shrink-0">
-              {/* <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-4 w-4 text-gray-400 hover:text-blue-600 transition"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-              </svg> */}
-              <img src={SR} alt="" />
-            </div>
-          </div>
-        ))}
-      </div>
 
-      {/* Quyi tugma */}
-      <div className="mt-6 text-center">
-        <button className="text-blue-600 hover:text-blue-800 text-sm font-medium">
-          Barcha mahsulotlarni ko'rish
-        </button>
+         
+        {/* Mahsulotlar */}
+        <div className="
+          grid
+          grid-cols-1
+          sm:grid-cols-2
+          md:grid-cols-3
+          lg:grid-cols-4
+          gap-6
+          mt-8
+        ">
+          {products.map((product) => (
+            <div
+              key={product.id}
+              className="flex justify-between p-4 bg-white rounded-md shadow-sm border border-gray-200 hover:border-blue-300 transition cursor-pointer"
+            >
+              <div className="flex-1 pr-3">
+                <span className="block text-xs text-gray-500 mb-1">
+                  {product.code}
+                </span>
+                <p className="text-sm text-gray-800 leading-snug line-clamp-3">
+                  {product.title}
+                </p>
+              </div>
+
+              <div className="flex-shrink-0">
+                <img src={SR} alt="" />
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Pastki tugma */}
+        <div className="mt-8 text-center">
+          <button className="text-blue-600 hover:text-blue-800 text-sm font-medium">
+            Barcha mahsulotlarni ko'rish
+          </button>
+        </div>
       </div>
     </div>
-    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     </>
   );
 };
 
-export default Popular;
+export default Populars;

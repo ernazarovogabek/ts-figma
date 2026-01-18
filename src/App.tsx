@@ -1,14 +1,17 @@
 import { Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout";
-import Home from "./components/Home";
-import About from "./components/About";
+import Category from "./components/Category";
+import Mashina from "./components/Mashina";
+import Qurilish from "./components/Qurilish";
 
 const App = () => {
   return (
     <Routes>
       <Route path="/" element={<Layout />}>
-        <Route index element={<Home />} />
-        <Route path="/about" element={<About />} />
+        <Route index element={<Category />} />
+        <Route path="mashina" element={<Mashina />} />
+        <Route path="qurilish" element={<Qurilish />} />
+       
       </Route>
     </Routes>
   );

@@ -13,8 +13,7 @@ const Layout = () => {
 
 
     <Outlet />
-    <Category />
-    <Popular />
+   
 
 
     <Footer />

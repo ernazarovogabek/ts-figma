@@ -14,8 +14,8 @@ import IM9 from '../assets/img/IM9.png'
 
 
 
+import Populars from './Populars';
 
-import Popular from './Popular';
 
 interface Category {
   id: number;
@@ -23,7 +23,7 @@ interface Category {
   icon: React.ReactNode;
 }
 
-const Category: React.FC = () => {
+const Qurilish: React.FC = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   const categories: Category[] = [
@@ -151,10 +151,10 @@ const Category: React.FC = () => {
     </div>
     
 
-<Popular />
+<Populars />
 
 </>
   );
 };
 
-export default Category;
+export default Qurilish;

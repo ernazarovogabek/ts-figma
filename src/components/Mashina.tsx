@@ -1,4 +1,5 @@
 
+
 import React, { useState } from 'react';
 
 import CO from '../assets/img/CO.png'
@@ -13,9 +14,9 @@ import IM8 from '../assets/img/IM8.png'
 import IM9 from '../assets/img/IM9.png'
 
 
+import Product from './Product';
 
 
-import Popular from './Popular';
 
 interface Category {
   id: number;
@@ -151,7 +152,7 @@ const Category: React.FC = () => {
     </div>
     
 
-<Popular />
+    <Product />
 
 </>
   );

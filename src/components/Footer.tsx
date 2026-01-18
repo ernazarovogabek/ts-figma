@@ -1,5 +1,8 @@
-// Footer.tsx
+
 import React from 'react';
+import Logo from '../assets/img/Logo.png'
+
+import SO from '../assets/img/SO.png' 
 
 const Footer: React.FC = () => {
   return (
@@ -10,10 +13,8 @@ const Footer: React.FC = () => {
         {/* Chap tomon — Logo va ma'lumot */}
         <div className="flex flex-col gap-4">
           <div className="flex items-center gap-3">
-            <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-blue-900" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 2L2 7l10 5 10-5M2 12v5l10 5m0 0v-5m0 5l10-5M2 12l10 5z" />
-              </svg>
+            <div className="w-12 h-12  rounded-lg flex items-center justify-center">
+             <img src={Logo} alt="" />
             </div>
             <div>
               <h3 className="font-bold text-sm leading-tight">
@@ -29,7 +30,7 @@ const Footer: React.FC = () => {
           <div className="mt-4">
             <p className="text-xs font-medium mb-2">Bizni ijtimoiy tarmoqlarda kuzating:</p>
             <div className="flex space-x-4 text-xl">
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-300">
+              {/* <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-300">
                 <i className="fab fa-facebook-f"></i>
               </a>
               <a href="https://t.me" target="_blank" rel="noopener noreferrer" className="hover:text-blue-300">
@@ -39,8 +40,11 @@ const Footer: React.FC = () => {
                 <i className="fab fa-youtube"></i>
               </a>
               <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-300">
-                <i className="fab fa-instagram"></i>
-              </a>
+                <i className="fab fa-instagra
+                m"></i>
+              </a> */}
+
+              <img src={SO} alt="" />
             </div>
           </div>
 
